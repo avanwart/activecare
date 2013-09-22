@@ -1,0 +1,831 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-14 09:45+0100\n"
+"PO-Revision-Date: 2012-12-14 09:45+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:66
+#: archive.php:68
+msgid "Archive"
+msgstr ""
+
+#: archive.php:78
+msgid "posts by author"
+msgstr ""
+
+#: archive.php:80
+msgid "posts displayed by category "
+msgstr ""
+
+#: archive.php:82
+msgid "posts displayed by tag "
+msgstr ""
+
+#: archive.php:84
+#: archive.php:87
+#: archive.php:90
+#: archive.php:93
+msgid "for "
+msgstr ""
+
+#: archive.php:96
+msgid "posts displayed by category"
+msgstr ""
+
+#: archive.php:171
+#: blog-template.php:296
+#: index.php:292
+#: portfolio-template.php:271
+#: search.php:121
+msgid "Load More"
+msgstr "Load More"
+
+#: blog-template.php:275
+#: home-template.php:62
+#: index.php:271
+msgid "Nothing Found"
+msgstr ""
+
+#: blog-template.php:279
+#: home-template.php:66
+#: index.php:275
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: comments.php:9
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:51
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:52
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:53
+msgid "- cancel reply"
+msgstr ""
+
+#: comments.php:54
+msgid "Post Comment"
+msgstr ""
+
+#: functions.php:428
+#: functions.php:429
+msgid "Portfolio"
+msgstr ""
+
+#: functions.php:635
+#: functions.php:643
+#, php-format
+msgid "<h4 class=\"comments_author\"> %s</h4>"
+msgstr ""
+
+#: functions.php:638
+#: functions.php:644
+#, php-format
+msgid "%1$s "
+msgstr ""
+
+#: search.php:42
+msgid "Search Results"
+msgstr ""
+
+#: search.php:45
+#, php-format
+msgid "for: %s"
+msgstr ""
+
+#: single.php:125
+msgid "Tags: "
+msgstr ""
+
+#: single.php:131
+msgid "Related Projects"
+msgstr ""
+
+#: single.php:137
+msgid "Related Posts"
+msgstr ""
+
+#: massive-panel/mpc-uploader.php:27
+msgid "Massive Panel Internal Container"
+msgstr ""
+
+#: massive-panel/mpc-uploader.php:128
+#: massive-panel/mpc-uploader.php:197
+msgid "Upload"
+msgstr ""
+
+#: massive-panel/mpc-uploader.php:369
+msgid "Gallery"
+msgstr ""
+
+#: massive-panel/mpc-uploader.php:369
+msgid "Previously Uploaded"
+msgstr ""
+
+#: massive-panel/theme-options.php:1050
+msgid "Massive Panel Settings - Contextual Help"
+msgstr ""
+
+#: massive-panel/theme-options.php:1051
+msgid "Contextual Help Goes Here"
+msgstr ""
+
+#: massive-panel/theme-settings.php:60
+msgid "Massive Panel Options"
+msgstr ""
+
+#: massive-panel/theme-settings.php:60
+msgid "Theme Options"
+msgstr ""
+
+#: massive-panel/theme-settings.php:75
+msgid "Massive Panel Settings Page"
+msgstr ""
+
+#: massive-panel/theme-settings.php:274
+msgid "Expecting a Numeric value!"
+msgstr ""
+
+#: massive-panel/theme-settings.php:290
+msgid "Expecting comma separated numeric values"
+msgstr ""
+
+#: massive-panel/theme-settings.php:300
+msgid "Expecting comma separated numeric values!"
+msgstr ""
+
+#: massive-panel/theme-settings.php:340
+msgid "Invalid email! Please re-enter!"
+msgstr ""
+
+#: massive-panel/theme-settings.php:343
+msgid "This setting field cannot be empty! Please enter a valid email address."
+msgstr ""
+
+#: massive-panel/theme-settings.php:351
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: massive-panel/theme-settings.php:505
+msgid "Please insert HEX value."
+msgstr ""
+
+#: tinymce/setup.php:10
+msgid "Insert Button Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:15
+msgid "Text"
+msgstr ""
+
+#: tinymce/setup.php:16
+msgid "Specify text which will be displayed isnide the button."
+msgstr ""
+
+#: tinymce/setup.php:21
+msgid "Unique Name"
+msgstr ""
+
+#: tinymce/setup.php:22
+msgid "Specify button unique name, no spaces and special characters you can use _ and -"
+msgstr ""
+
+#: tinymce/setup.php:27
+msgid "Button URL"
+msgstr ""
+
+#: tinymce/setup.php:28
+msgid "Button URL."
+msgstr ""
+
+#: tinymce/setup.php:33
+msgid "Background Color"
+msgstr ""
+
+#: tinymce/setup.php:34
+msgid "Button background color."
+msgstr ""
+
+#: tinymce/setup.php:39
+msgid "Text Color"
+msgstr ""
+
+#: tinymce/setup.php:40
+msgid "Specify text color."
+msgstr ""
+
+#: tinymce/setup.php:45
+msgid "Background Hover Color"
+msgstr ""
+
+#: tinymce/setup.php:46
+msgid "Button background color after hover."
+msgstr ""
+
+#: tinymce/setup.php:51
+msgid "Text Hover Color"
+msgstr ""
+
+#: tinymce/setup.php:52
+msgid "Button text color after hover."
+msgstr ""
+
+#: tinymce/setup.php:67
+msgid "Insert Heading Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:72
+msgid "Heading"
+msgstr ""
+
+#: tinymce/setup.php:73
+msgid "Define Heading text."
+msgstr ""
+
+#: tinymce/setup.php:78
+msgid "Subheading"
+msgstr ""
+
+#: tinymce/setup.php:79
+msgid "Define subheading"
+msgstr ""
+
+#: tinymce/setup.php:83
+#: tinymce/setup.php:123
+msgid "Align"
+msgstr ""
+
+#: tinymce/setup.php:84
+#: tinymce/setup.php:124
+msgid "Select the type, align type."
+msgstr ""
+
+#: tinymce/setup.php:101
+#: tinymce/setup.php:176
+msgid "Insert YouTube Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:106
+msgid "Content"
+msgstr ""
+
+#: tinymce/setup.php:107
+msgid "Define the leter."
+msgstr ""
+
+#: tinymce/setup.php:112
+msgid "Background"
+msgstr ""
+
+#: tinymce/setup.php:113
+msgid "Define background color (HEX value)."
+msgstr ""
+
+#: tinymce/setup.php:118
+msgid "Color"
+msgstr ""
+
+#: tinymce/setup.php:119
+msgid "Define text color (HEX value)."
+msgstr ""
+
+#: tinymce/setup.php:140
+msgid "Insert Recent Portfolio Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:145
+#: tinymce/setup.php:163
+msgid "Number of Posts"
+msgstr ""
+
+#: tinymce/setup.php:146
+#: tinymce/setup.php:164
+msgid "Define number of posts that will rotate in the carousel."
+msgstr ""
+
+#: tinymce/setup.php:158
+msgid "Insert Recent Posts Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:181
+#: tinymce/setup.php:213
+msgid "Video ID"
+msgstr ""
+
+#: tinymce/setup.php:182
+msgid "Paste YouTube video id, example: 090WQvJAOec"
+msgstr ""
+
+#: tinymce/setup.php:187
+#: tinymce/setup.php:219
+msgid "Video Width"
+msgstr ""
+
+#: tinymce/setup.php:188
+#: tinymce/setup.php:220
+msgid "Video width in pixels."
+msgstr ""
+
+#: tinymce/setup.php:193
+#: tinymce/setup.php:225
+msgid "Video Height"
+msgstr ""
+
+#: tinymce/setup.php:194
+#: tinymce/setup.php:226
+msgid "Video height in pixels."
+msgstr ""
+
+#: tinymce/setup.php:208
+msgid "Insert Vimeo Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:214
+msgid "Paste Vimeo video id, example: 22945553"
+msgstr ""
+
+#: tinymce/setup.php:240
+msgid "Insert Toggle Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:245
+msgid "Toggle's Title"
+msgstr ""
+
+#: tinymce/setup.php:246
+msgid "Input toggle's title."
+msgstr ""
+
+#: tinymce/setup.php:251
+msgid "Toggle's Text"
+msgstr ""
+
+#: tinymce/setup.php:252
+msgid "Add toggle's text."
+msgstr ""
+
+#: tinymce/setup.php:266
+msgid "Insert Icon Columns Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:270
+#: tinymce/setup.php:346
+msgid "Add Column"
+msgstr ""
+
+#: tinymce/setup.php:271
+#: tinymce/setup.php:347
+msgid "Remove Column"
+msgstr ""
+
+#: tinymce/setup.php:275
+msgid "Column Heading"
+msgstr ""
+
+#: tinymce/setup.php:276
+msgid "Define column heading"
+msgstr ""
+
+#: tinymce/setup.php:281
+msgid "Icon"
+msgstr ""
+
+#: tinymce/setup.php:282
+msgid "Select the icon."
+msgstr ""
+
+#: tinymce/setup.php:292
+#: tinymce/setup.php:381
+msgid "Column Content"
+msgstr ""
+
+#: tinymce/setup.php:293
+msgid "Define column content"
+msgstr ""
+
+#: tinymce/setup.php:310
+msgid "Insert Tabbed Content Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:314
+msgid "Add Tab"
+msgstr ""
+
+#: tinymce/setup.php:315
+msgid "Remove Tab"
+msgstr ""
+
+#: tinymce/setup.php:319
+msgid "Tab Title"
+msgstr ""
+
+#: tinymce/setup.php:320
+msgid "Add the title for this tab"
+msgstr ""
+
+#: tinymce/setup.php:326
+msgid "Tab Content"
+msgstr ""
+
+#: tinymce/setup.php:327
+msgid "Add the tab content."
+msgstr ""
+
+#: tinymce/setup.php:342
+#: tinymce/setup.php:396
+#: tinymce/setup.php:1015
+msgid "Insert Columns Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:351
+msgid "Column Type"
+msgstr ""
+
+#: tinymce/setup.php:352
+msgid "Select the type, ie width of the column."
+msgstr ""
+
+#: tinymce/setup.php:382
+msgid "Add the column content."
+msgstr ""
+
+#: tinymce/setup.php:400
+msgid "Add New List Item"
+msgstr ""
+
+#: tinymce/setup.php:401
+msgid "Remove List Item"
+msgstr ""
+
+#: tinymce/setup.php:405
+msgid "List Item Content"
+msgstr ""
+
+#: tinymce/setup.php:406
+msgid "List Item"
+msgstr ""
+
+#: tinymce/setup.php:407
+#: tinymce/setup.php:413
+msgid "Specify the list item content."
+msgstr ""
+
+#: tinymce/setup.php:411
+msgid "Icon Color"
+msgstr ""
+
+#: tinymce/setup.php:412
+msgid "#515151"
+msgstr ""
+
+#: tinymce/setup.php:417
+msgid "List Type"
+msgstr ""
+
+#: tinymce/setup.php:418
+msgid "Specify the list type"
+msgstr ""
+
+#: tinymce/setup.php:601
+msgid "Insert Contact Form"
+msgstr ""
+
+#: tinymce/setup.php:614
+msgid "Insert Contact Form Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:619
+msgid "Map Source"
+msgstr ""
+
+#: tinymce/setup.php:620
+msgid "Paste the link for a the google maps."
+msgstr ""
+
+#: tinymce/setup.php:625
+msgid "Map Width"
+msgstr ""
+
+#: tinymce/setup.php:626
+msgid "Define the width of a google map."
+msgstr ""
+
+#: tinymce/setup.php:631
+msgid "Map Height"
+msgstr ""
+
+#: tinymce/setup.php:632
+msgid "Define the height of a google map."
+msgstr ""
+
+#: tinymce/setup.php:646
+msgid "Insert Flex Slider Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:651
+#: tinymce/setup.php:719
+#: tinymce/setup.php:1026
+msgid "Slider Width"
+msgstr ""
+
+#: tinymce/setup.php:652
+#: tinymce/setup.php:720
+#: tinymce/setup.php:1027
+msgid "Specify width of the slider."
+msgstr ""
+
+#: tinymce/setup.php:658
+#: tinymce/setup.php:713
+#: tinymce/setup.php:1033
+#: tinymce/setup.php:1038
+msgid "Slider Height"
+msgstr ""
+
+#: tinymce/setup.php:659
+#: tinymce/setup.php:714
+#: tinymce/setup.php:1034
+msgid "Specify height of the slider."
+msgstr ""
+
+#: tinymce/setup.php:663
+msgid "Slider Effect"
+msgstr ""
+
+#: tinymce/setup.php:664
+#: tinymce/setup.php:1039
+msgid "Specify the transition effect type"
+msgstr ""
+
+#: tinymce/setup.php:673
+msgid "Slide Show Speed"
+msgstr ""
+
+#: tinymce/setup.php:674
+msgid "Specify slide show speed in milliseconds."
+msgstr ""
+
+#: tinymce/setup.php:679
+#: tinymce/setup.php:1068
+msgid "Add New Image"
+msgstr ""
+
+#: tinymce/setup.php:680
+#: tinymce/setup.php:1069
+msgid "Remove Image"
+msgstr ""
+
+#: tinymce/setup.php:684
+#: tinymce/setup.php:1073
+msgid "Image URL"
+msgstr ""
+
+#: tinymce/setup.php:685
+#: tinymce/setup.php:1074
+msgid "Select the image that will be displayed in the slider."
+msgstr ""
+
+#: tinymce/setup.php:701
+msgid "Insert Layer Slider Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:706
+msgid "Slider Unique ID"
+msgstr ""
+
+#: tinymce/setup.php:707
+msgid "Specify unqiue id for your slider."
+msgstr ""
+
+#: tinymce/setup.php:724
+#: tinymce/setup.php:725
+msgid "Autoplay Slideshow"
+msgstr ""
+
+#: tinymce/setup.php:733
+#: tinymce/setup.php:734
+msgid "Slideshow delay"
+msgstr ""
+
+#: tinymce/setup.php:742
+#: tinymce/setup.php:743
+msgid "Pouse Slideshow on hover"
+msgstr ""
+
+#: tinymce/setup.php:752
+msgid "Arrows offset"
+msgstr ""
+
+#: tinymce/setup.php:753
+msgid "Specify arrows offset in pixels"
+msgstr ""
+
+#: tinymce/setup.php:757
+#: tinymce/setup.php:758
+msgid "Choose Shadow Style"
+msgstr ""
+
+#: tinymce/setup.php:769
+#: tinymce/setup.php:770
+msgid "Length of background transition"
+msgstr ""
+
+#: tinymce/setup.php:774
+#: tinymce/setup.php:775
+msgid "Show ui on slide hover"
+msgstr ""
+
+#: tinymce/setup.php:784
+msgid "Controls opacity"
+msgstr ""
+
+#: tinymce/setup.php:785
+msgid "Controls opacity (0 to 1) value"
+msgstr ""
+
+#: tinymce/setup.php:789
+msgid "Show bullets"
+msgstr ""
+
+#: tinymce/setup.php:790
+msgid "Show bullets (radio buttons)"
+msgstr ""
+
+#: tinymce/setup.php:798
+msgid "Show arrows"
+msgstr ""
+
+#: tinymce/setup.php:799
+msgid "Show arrows (next/preview)"
+msgstr ""
+
+#: tinymce/setup.php:808
+msgid "Bullets vertical offset"
+msgstr ""
+
+#: tinymce/setup.php:809
+msgid "Bulelts (radio buttons) vertical offset"
+msgstr ""
+
+#: tinymce/setup.php:814
+msgid "Bullets horizontal offset"
+msgstr ""
+
+#: tinymce/setup.php:815
+msgid "Bulelts (radio buttons) horizontal offset"
+msgstr ""
+
+#: tinymce/setup.php:819
+msgid "Swipe gesture"
+msgstr ""
+
+#: tinymce/setup.php:820
+msgid "Choose if swipe gesture should be enabled"
+msgstr ""
+
+#: tinymce/setup.php:829
+msgid "Add Slide"
+msgstr ""
+
+#: tinymce/setup.php:830
+msgid "Remove Slide"
+msgstr ""
+
+#: tinymce/setup.php:835
+msgid "Class name"
+msgstr ""
+
+#: tinymce/setup.php:836
+msgid "This is used for custom CSS styling."
+msgstr ""
+
+#: tinymce/setup.php:841
+msgid "Select easing type"
+msgstr ""
+
+#: tinymce/setup.php:842
+msgid "Choose easing type for your animation"
+msgstr ""
+
+#: tinymce/setup.php:880
+msgid "Select transition type"
+msgstr ""
+
+#: tinymce/setup.php:881
+msgid "Choose transtiontype for your animation"
+msgstr ""
+
+#: tinymce/setup.php:893
+msgid "Slide thumbnail"
+msgstr ""
+
+#: tinymce/setup.php:894
+msgid "Specify slides thumbnail URL."
+msgstr ""
+
+#: tinymce/setup.php:900
+msgid "Slide background"
+msgstr ""
+
+#: tinymce/setup.php:901
+msgid "Specify slides background URL."
+msgstr ""
+
+#: tinymce/setup.php:913
+msgid "Insert Layers Slider - Layer Shortcode"
+msgstr ""
+
+#: tinymce/setup.php:918
+msgid "Layer X position"
+msgstr ""
+
+#: tinymce/setup.php:919
+msgid "Specify final position of the layer on X axis."
+msgstr ""
+
+#: tinymce/setup.php:924
+msgid "Layer Y position"
+msgstr ""
+
+#: tinymce/setup.php:925
+msgid "Specify final position of the layer on Y axis."
+msgstr ""
+
+#: tinymce/setup.php:930
+msgid "Layer animation duration"
+msgstr ""
+
+#: tinymce/setup.php:931
+msgid "Specify layer animation duration"
+msgstr ""
+
+#: tinymce/setup.php:936
+msgid "Layer animation delay"
+msgstr ""
+
+#: tinymce/setup.php:937
+msgid "Specify layer animation delay"
+msgstr ""
+
+#: tinymce/setup.php:941
+msgid "Layer animation easing type"
+msgstr ""
+
+#: tinymce/setup.php:942
+msgid "Choose layer animation easing type."
+msgstr ""
+
+#: tinymce/setup.php:980
+msgid "Layer transition type"
+msgstr ""
+
+#: tinymce/setup.php:981
+msgid "Choose layer transtion type."
+msgstr ""
+
+#: tinymce/setup.php:992
+msgid "Layer fade"
+msgstr ""
+
+#: tinymce/setup.php:993
+msgid "Choose whether the fade animation should be applyed."
+msgstr ""
+
+#: tinymce/setup.php:1002
+msgid "Layer HTML Content"
+msgstr ""
+
+#: tinymce/setup.php:1003
+msgid "Insidert HTML content for your layer"
+msgstr ""
+
+#: tinymce/setup.php:1020
+msgid "Sliders Unique ID"
+msgstr ""
+
+#: tinymce/setup.php:1021
+msgid "Specify slider unique ID."
+msgstr ""
+
+#: tinymce/setup.php:1062
+msgid "Slider Pause Time"
+msgstr ""
+
+#: tinymce/setup.php:1063
+msgid "Specify pause time of each slide in milliseconds."
+msgstr ""
+
