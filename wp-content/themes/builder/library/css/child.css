@@ -11,6 +11,11 @@ h3,
 h4 {
   font-family: 'Bebas Neue';
 }
+.btn {
+  padding: 12px 24px;
+  border-radius: 0;
+  font-size: 17px;
+}
 .navbar {
   background: white;
 }
@@ -40,11 +45,15 @@ h4 {
   border-bottom-color: #555;
 }
 .navbar .navbar-collapse .nav a:hover .caret {
-  border-top-color: #222;
-  border-bottom-color: #222;
+  border-top-color: #c74545;
+  border-bottom-color: #c74545;
 }
 .navbar .navbar-collapse .nav li a {
   color: #555;
   font-family: 'Roboto Slab';
   font-size: 16px;
+}
+.navbar .navbar-collapse .nav li a:hover {
+  color: #c74545;
+  background: transparent;
 }

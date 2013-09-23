@@ -9,9 +9,16 @@
     font-style: normal;
 
 }
+@red: 	#c74545;
+@blue:  red;
 
 h1, h2, h3, h4 {
 	font-family: 'Bebas Neue';
+}
+.btn {
+	padding: 12px 24px;
+	border-radius: 0;
+	font-size: 17px;
 }
 .navbar {
 	background: white;
@@ -43,16 +50,67 @@ h1, h2, h3, h4 {
 				border-bottom-color: #555;
 			}
 			a:hover .caret {
-				border-top-color: #222;
-				border-bottom-color: #222;
+				border-top-color: @red;
+				border-bottom-color: @red;
 			}
 			li {
 				a {
 					color: #555;
 					font-family: 'Roboto Slab';
 					font-size: 16px;
+					&:hover {
+						color: @red;
+						background: transparent;
+					}
 				}
 			}
+		}
+	}
+}
+
+/*  HOME PAGE  */
+.carousel {
+	.carousel-control {
+		line-height: 350px;
+		font-size: 10em;
+		font-family: 'Bebas Neue';
+		opacity: .12;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.item {
+		height: 350px;
+		.jumbotron {
+			background: transparent;
+		}
+	}
+	.sports {
+		background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
+		background-size: cover;
+	}
+	.stage {
+		padding: 20px 30px;
+		h1 {
+			font-size: 10em;
+			text-align: center;
+		}
+	}
+	.dark {
+		background: rgba(0, 0, 0, .35);
+		border: 1px solid rgba(0, 0, 0, .45);
+		h1 {
+			color: white;
+		}
+		p {
+			color: white;
+			font-size: 17px;
+		}
+	}
+	.light {
+		h1 {
+			color: white;
+			text-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
 		}
 	}
 }
