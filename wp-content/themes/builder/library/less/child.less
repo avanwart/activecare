@@ -34,6 +34,12 @@ h1, h2, h3, h4 {
 				color: #333;
 			}
 		}
+		.navbar-brand:hover {
+			color: @red;
+			span {
+				color: darken(@red, 10%);
+			}
+		}
 		.navbar-toggle {
 			margin-top: 20px;
 			background-color: #f0f0f0;
@@ -81,12 +87,21 @@ h1, h2, h3, h4 {
 	}
 	.item {
 		height: 350px;
+		background-color: #111;
 		.jumbotron {
 			background: transparent;
 		}
 	}
 	.sports {
-		background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
+		// background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
+		background-size: cover;
+	}
+	.life {
+		// background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
+		background-size: cover;
+	}
+	.dance {
+		// background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
 		background-size: cover;
 	}
 	.stage {

@@ -6627,6 +6627,12 @@ h4 {
 .navbar .navbar-header .navbar-brand span {
   color: #333;
 }
+.navbar .navbar-header .navbar-brand:hover {
+  color: #c74545;
+}
+.navbar .navbar-header .navbar-brand:hover span {
+  color: #a73232;
+}
 .navbar .navbar-header .navbar-toggle {
   margin-top: 20px;
   background-color: #f0f0f0;
@@ -6666,12 +6672,18 @@ h4 {
 }
 .carousel .item {
   height: 350px;
+  background-color: #111;
 }
 .carousel .item .jumbotron {
   background: transparent;
 }
 .carousel .sports {
-  background: url('/wp-content/uploads/2013/09/weights-1024x402.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+.carousel .life {
+  background-size: cover;
+}
+.carousel .dance {
   background-size: cover;
 }
 .carousel .stage {
