@@ -46,7 +46,7 @@
 				<header class="header" role="banner">
 
 					<nav role="navigation">
-						<div class="navbar navbar-inverse navbar-fixed-top">
+						<div class="navbar navbar-fixed-top">
 							<div class="container">
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 								<div class="navbar-header">
@@ -56,11 +56,11 @@
 										<span class="icon-bar"></span>
 									</button>
 
-									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">Active <span>Care</span></a>
 
 								</div>
 
-								<div class="navbar-collapse collapse navbar-responsive-collapse">
+								<div class="navbar-collapse collapse navbar-responsive-collapse pull-right">
 									<?php bones_main_nav(); ?>
 
 								</div>

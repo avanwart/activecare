@@ -17,7 +17,7 @@ homepage of your website.
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7">
-							<h1>Hello, world!</h1>
+							<h1>Sports, Life, Dance</h1>
 							<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 							<p><a class="btn btn-primary btn-lg">Learn more</a></p>
 						</div>
