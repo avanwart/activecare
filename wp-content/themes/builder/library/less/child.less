@@ -13,25 +13,40 @@
 @blue:  red;
 
 h1, h2, h3, h4 {
-	font-family: 'Bebas Neue';
+	font-family: 'bebas_neueregular';
 }
 .btn {
 	padding: 12px 24px;
 	border-radius: 0;
 	font-size: 17px;
 }
+#banner.home-page {
+	margin: 0 0 1.5em;
+	padding-top: 0;
+}
 .navbar {
 	background: white;
+	margin: 0;
 	.navbar-header {
+		float: none!important;
+		width: 100%;
+		text-align: center;
 		.navbar-brand {
 			float: none;
 			display: block;
 			color: #666;
-			font-family: 'Bebas Neue';
-			font-size: 44px;
+			font-family: 'bebas_neueregular';
+			font-size: 69px;
 			line-height: 1;
+			margin: 20px 0 -25px 0;
+			padding: 0;
 			span {
 				color: #333;
+			}
+		}
+		.tagline {
+			h1 {
+				font-size: 18px;
 			}
 		}
 		.navbar-brand:hover {
@@ -49,8 +64,11 @@ h1, h2, h3, h4 {
 		}
 	}
 	.navbar-collapse {
-		margin: 10px 0 0 0;
+		margin: 0;
+		text-align: center;
 		.nav {
+			display: inline-block;
+			float: none;
 			.caret {
 				border-top-color: #555;
 				border-bottom-color: #555;
@@ -62,12 +80,16 @@ h1, h2, h3, h4 {
 			li {
 				a {
 					color: #555;
-					font-family: 'Roboto Slab';
-					font-size: 16px;
+					font-family: 'bebas_neueregular';
+					font-size: 20px;
+					padding: 10px 25px;
 					&:hover {
 						color: @red;
 						background: transparent;
 					}
+				}
+				ul li {
+					text-align: left;
 				}
 			}
 		}
@@ -79,7 +101,7 @@ h1, h2, h3, h4 {
 	.carousel-control {
 		line-height: 350px;
 		font-size: 10em;
-		font-family: 'Bebas Neue';
+		font-family: 'bebas_neueregular';
 		opacity: .12;
 		&:hover {
 			opacity: 1;
@@ -90,6 +112,7 @@ h1, h2, h3, h4 {
 		background-color: #111;
 		.jumbotron {
 			background: transparent;
+			margin: 0;
 		}
 	}
 	.sports {
@@ -126,6 +149,94 @@ h1, h2, h3, h4 {
 		h1 {
 			color: white;
 			text-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+		}
+	}
+}
+
+/*  HOME THREE  */
+.home-three {
+	h2 {
+		font-size: 2.5em;
+		color: #666;
+	}
+	.thumbnail {
+		border-radius: 0;
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		max-width: 80%;
+		height: auto;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 24px;
+	}
+}
+
+/*  MEDIA QUERIES  */
+@media (max-width: 1200px) {
+	.nav > li > a {
+		position: relative;
+		display: block;
+		padding: 16px 12px;
+		font-size: 14px!important;
+	}
+	.nav > li > ul > li > a {
+		font-size: 14px!important;
+	}
+}
+@media (max-width: 1024px) {
+	.navbar-header {
+		float: none;
+		text-align: center;
+		.navbar-brand {
+			padding-botom: 0;
+		}
+	}
+	.navbar-collapse {
+		float: none!important;
+		width: 100%;
+		margin: 0!important;
+		padding: 0!important;
+	}
+}
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 480px) {
+
+	.navbar-brand {
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+	}
+	#banner.home-page {
+		margin-top: 3em;
+		margin-bottom: 0;
+		padding-top: 20px;
+	}
+	.carousel {
+		.carousel-control {
+			line-height: 200px;
+		}
+		.item {
+			height: 200px;
+			.jumbotron {
+				height: 200px;
+				padding: 0;
+				font-size: 11px;
+				.stage {
+					padding: 0;
+				}
+				h1 {
+					line-height: 200px;
+					margin: 0;
+				}
+
+			}
 		}
 	}
 }

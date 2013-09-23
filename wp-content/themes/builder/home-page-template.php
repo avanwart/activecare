@@ -1,18 +1,14 @@
-<?php 
-/*
-Use this page if you want to create a custom homepage for 
-your site. WordPress will look for home.php before index.php. If
-you end up using a custom home.php page you can also use the 
-blog.php page to display your blog posts. Simply rename or delete
-this page template and the latest blog posts(index.php) will be the
-homepage of your website. 
-*/
+<?php
+/**
+ * Home Page Template
+ *
+   Template Name:  Home Page Template
+ *
+ */
 ?>
+
 <?php get_header(); ?>
 
-<section id="hero">
-	
-</section>
 <div id="banner" class="home-page">
 	<div id="myCarousel" class="carousel slide">
 		<div class="carousel-inner">
@@ -67,20 +63,20 @@ homepage of your website.
 <div class="container home-three">
 	<div class="row">
 		<div class="col-lg-4">
-			<img class="" src="<?php the_field('team_image'); ?>">
-			<h2>Compelling Headline 1</h2>
+			<h2><?php the_field('headline_1'); ?></h2>
+			<img class="thumbnail" src="<?php the_field('founder'); ?>">
 			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
 		<div class="col-lg-4">
-			<img class="" src="<?php the_field('team_image'); ?>">
-			<h2>Compelling Headline 2</h2>
+			<h2><?php the_field('headline_2'); ?></h2>
+			<img class="thumbnail" src="<?php the_field('philosophy'); ?>">
 			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
 		<div class="col-lg-4">
-			<img class="" src="http://placehold.it/320x240">
-			<h2>Compelling Headline 3</h2>
+			<h2><?php the_field('headline_3'); ?></h2>
+			<img class="thumbnail" src="<?php the_field('annexe'); ?>">
 			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
