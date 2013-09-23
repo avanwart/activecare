@@ -57,7 +57,7 @@
 									</button>
 
 									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">Active <span>Care</span></a>
-									<div class="tagline"><h1>Sports Training &amp; Orthopedic Rehabilitation</h1></div>
+									<div class="tagline"><h1>Sports Performance &amp; Orthopedic Rehabilitation</h1></div>
 
 								</div>
 

@@ -76,7 +76,7 @@
 		</div><!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<h2><?php the_field('headline_3'); ?></h2>
-			<img class="thumbnail" src="<?php the_field('annexe'); ?>">
+			<img class="thumbnail" src="<?php the_field('facility'); ?>">
 			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
