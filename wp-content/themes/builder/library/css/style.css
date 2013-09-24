@@ -6787,6 +6787,31 @@ h4 {
 }
 .footer .copyright {
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+.footer ul.social-media {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer ul.social-media li {
+  margin-bottom: 15px;
+}
+.footer ul.social-media li a {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+.footer i.twitter {
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/twitter-icon.png');
+}
+.footer i.facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/facebook-icon.png');
 }
 i.icon {
   display: inline-block;
@@ -6818,6 +6843,12 @@ i.map {
   height: 17px;
   margin-bottom: 3px;
   background-image: url('../img/map-icon.png');
+}
+i.clock {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 3px;
+  background-image: url('../img/clock-icon.png');
 }
 /*  MEDIA QUERIES  */
 @media (max-width: 1200px) {
@@ -6857,11 +6888,12 @@ i.map {
     position: absolute;
     left: 50%;
     margin-left: -100px;
+    font-size: 36px;
   }
   #banner.home-page {
-    margin-top: 3em;
+    margin-top: 0em;
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 0px;
   }
   .carousel .carousel-control {
     line-height: 200px;
@@ -6881,6 +6913,32 @@ i.map {
     line-height: 200px;
     margin: 0;
   }
+  header .navbar .navbar-header {
+    margin: 0;
+    text-align: left;
+  }
+  header .navbar .navbar-header .navbar-toggle {
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  header .navbar .navbar-header .navbar-brand {
+    font-size: 50px;
+    clear: both;
+    display: block;
+    left: 15px;
+    margin: 10px 0 0 0;
+  }
+  header .navbar .navbar-header .tagline {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    clear: both;
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  
 }
 /*
 RETINA (2x RESOLUTION DEVICES)

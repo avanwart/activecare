@@ -209,6 +209,31 @@ h1, h2, h3, h4 {
 	}
 	.copyright {
 		text-align: center;
+		-webkit-font-smoothing: antialiased;
+	}
+	ul.social-media {
+		margin: 20px 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			margin-bottom: 15px;
+			a {
+				font-size: 20px;
+				font-family: 'Roboto Slab';
+				color: white;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+	i.twitter {
+		width: 24px;
+		height: 24px;
+		background-image: url('../img/twitter-icon.png');
+	}
+	i.facebook {
+		width: 24px;
+		height: 24px;
+		background-image: url('../img/facebook-icon.png');
 	}
 }
 
@@ -242,6 +267,12 @@ i.map {
 	height: 17px;
 	margin-bottom: 3px;
 	background-image: url('../img/map-icon.png');
+}
+i.clock {
+	width: 17px;
+	height: 17px;
+	margin-bottom: 3px;
+	background-image: url('../img/clock-icon.png');
 }
 
 /*  MEDIA QUERIES  */
@@ -283,11 +314,12 @@ i.map {
 		position: absolute;
 		left: 50%;
 		margin-left: -100px;
+		font-size: 36px;
 	}
 	#banner.home-page {
-		margin-top: 3em;
+		margin-top: 0em;
 		margin-bottom: 0;
-		padding-top: 20px;
+		padding-top: 0px;
 	}
 	.carousel {
 		.carousel-control {
@@ -310,4 +342,34 @@ i.map {
 			}
 		}
 	}
+	header {
+		.navbar {
+			.navbar-header {
+				margin: 0;
+				text-align: left;
+				.navbar-toggle {
+					margin-top: 15px;
+					margin-right: 0;
+					margin-bottom: 30px;
+				}
+				.navbar-brand {
+					font-size: 50px;
+					clear: both;
+					display: block;
+					left: 15px;
+					margin: 10px 0 0 0;
+				}
+				.tagline {
+					position: absolute;
+					width: 100%;
+					top: 55px;
+					clear: both;
+					display: block;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
 }
