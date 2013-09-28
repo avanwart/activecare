@@ -6607,6 +6607,7 @@ h2,
 h3,
 h4 {
   font-family: 'bebas_neueregular';
+  -webkit-font-smoothing: antialiased;
 }
 .btn {
   padding: 12px 24px;
@@ -6753,6 +6754,67 @@ h4 {
 .home-three p {
   margin-bottom: 24px;
 }
+#content {
+  margin-top: 1em;
+}
+#content .article-header h1 {
+  font-family: 'bebas_neueregular';
+  background: #222;
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  margin-top: 0;
+}
+#content .article-header h1 a {
+  color: white;
+  font-size: 38px;
+}
+.accordion .accordion-heading {
+  border-top: 1px solid #dadada;
+}
+.accordion .accordion-heading .accordion-toggle {
+  text-align: center;
+}
+.accordion .accordion-heading .accordion-toggle h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 10px 0;
+}
+.accordion .accordion-heading .accordion-toggle h3:hover {
+  background: #f3f3f3;
+}
+.accordion .accordion-inner {
+  padding: 20px 10px;
+}
+.accordion .accordion-inner p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.sidebar {
+  position: relative;
+  min-height: 1px;
+  padding: 20px 30px;
+  background: #666;
+  border-radius: 0;
+}
+.sidebar .widgettitle {
+  color: white;
+  font-size: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+.sidebar .footer-nav li {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+.sidebar .footer-nav li span {
+  display: none;
+}
+.sidebar .footer-nav li a {
+  color: white;
+}
 /*  FOOTER  */
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
@@ -6769,6 +6831,7 @@ h4 {
 .footer input[type="text"] {
   height: 37px;
   border-radius: 0;
+  border-color: #111;
 }
 .footer .footer-nav li {
   display: block;
@@ -6856,7 +6919,6 @@ i.clock {
     position: relative;
     display: block;
     padding: 16px 12px;
-    font-size: 14px!important;
   }
   .nav > li > ul > li > a {
     font-size: 14px!important;
@@ -6913,6 +6975,13 @@ i.clock {
     line-height: 200px;
     margin: 0;
   }
+  header .navbar .navbar-collapse .nav li a {
+    font-size: 28px!important;
+    padding: 10px 25px;
+  }
+  header .navbar .navbar-collapse .nav li > ul li a {
+    font-size: 20px!important;
+  }
   header .navbar .navbar-header {
     margin: 0;
     text-align: left;
@@ -6935,6 +7004,9 @@ i.clock {
     top: 55px;
     clear: both;
     display: block;
+  }
+  .hidden-phone {
+    display: none;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

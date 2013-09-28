@@ -8,7 +8,7 @@
 							<nav role="navigation">
 								<?php /*bones_footer_links(); */?>
 								<ul id="menu-footer-contact" class="footer-nav clearfix">
-									<li><i class="icon clock"></i>Monday &mdash; Friday&nbsp;&nbsp;|&nbsp;&nbsp;7AM &mdash; 7:30PM&nbsp;&nbsp;|&nbsp;&nbsp;Closed weekends</li>
+									<li><i class="icon clock"></i>Monday &mdash; Friday&nbsp;&nbsp;|&nbsp;&nbsp;7AM &mdash; 7:30PM<span class="hidden-phone">&nbsp;&nbsp;|&nbsp;&nbsp;Closed weekends</span></li>
 									<li id="menu-item-428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-428"><i class="icon phone"></i> Tel:  <a href="tel:4153876564">(415) 387-6564</a></li>
 									<li id="menu-item-431" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-431"><i class="icon fax"></i> Fax:  (415) 387-2013</li>
 									<li id="menu-item-429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-429"><i class="icon map"></i> 3019 Geary Blvd | San Francisco, 94118</li>

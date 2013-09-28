@@ -14,6 +14,7 @@
 
 h1, h2, h3, h4 {
 	font-family: 'bebas_neueregular';
+	-webkit-font-smoothing: antialiased;
 }
 .btn {
 	padding: 12px 24px;
@@ -174,6 +175,77 @@ h1, h2, h3, h4 {
 	}
 }
 
+//  CONTENT
+#content {
+	margin-top: 1em;
+	.article-header h1 {
+		font-family: 'bebas_neueregular';
+		background: #222;
+		color: white;
+		padding: 8px 0px;
+		text-align: center;
+		margin-top: 0;
+		a {
+			color: white;
+			font-size: 38px;
+		}
+	}
+}
+
+// ACCORDIONS
+.accordion {
+	.accordion-heading {
+		border-top: 1px solid #dadada;
+		.accordion-toggle {
+			text-align: center;
+			h3 {
+				font-size: 32px;
+				margin: 0;
+				padding: 10px 0;
+				&:hover {
+					background: #f3f3f3;
+				}
+			}
+		}
+	}
+	
+	.accordion-inner {
+		padding: 20px 10px;
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 24px;
+		}
+	}
+}
+
+// SIDEBAR
+.sidebar {
+	position: relative;
+	min-height: 1px;
+	padding: 20px 30px;
+	background: #666;
+	border-radius: 0;
+	.widgettitle {
+		color: white;
+		font-size: 28px;
+		-webkit-font-smoothing: antialiased;
+	}
+	.footer-nav {
+		li {
+			color: white;
+			display: block;
+			margin-bottom: 10px;
+			-webkit-font-smoothing: antialiased;
+			span {
+				display: none;
+			}
+			a {
+				color: white;
+			}
+		}
+	}
+}
 /*  FOOTER  */
 .footer {
 	border-top: 1px solid rgba(0, 0, 0, .5);
@@ -189,6 +261,7 @@ h1, h2, h3, h4 {
 	input[type="text"] {
 		height: 37px;
 		border-radius: 0;
+		border-color: #111;
 	}
 	.footer-nav {
 		li {
@@ -281,7 +354,6 @@ i.clock {
 		position: relative;
 		display: block;
 		padding: 16px 12px;
-		font-size: 14px!important;
 	}
 	.nav > li > ul > li > a {
 		font-size: 14px!important;
@@ -344,6 +416,13 @@ i.clock {
 	}
 	header {
 		.navbar {
+			.navbar-collapse .nav li a {
+				font-size: 28px!important;
+				padding: 10px 25px;
+			}
+			.navbar-collapse .nav li > ul li a {
+				font-size: 20px!important;
+			}
 			.navbar-header {
 				margin: 0;
 				text-align: left;
@@ -368,6 +447,9 @@ i.clock {
 				}
 			}
 		}
+	}
+	.hidden-phone {
+		display: none;
 	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
