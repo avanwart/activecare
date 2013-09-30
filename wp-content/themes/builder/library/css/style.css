@@ -6602,6 +6602,9 @@ and more scalable.
   font-weight: normal;
   font-style: normal;
 }
+body {
+  background: red;
+}
 h1,
 h2,
 h3,
