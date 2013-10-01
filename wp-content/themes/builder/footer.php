@@ -19,8 +19,9 @@
 						<div class="col-lg-4">
 							<?php get_search_form(); ?>
 							<ul class="social-media">
-								<li><a href="https://www.facebook.com/Activecare.Sports.Rehab.Training" target="_blank"><i class="icon facebook"></i> Like us on Facebook</a></li>
-								<li><a href="https://twitter.com/LisaGiannone" target="_blank"><i class="icon twitter"></i> Follow us on Twitter</a></li>
+								<li><a href="https://www.facebook.com/ActiveCareSF" target="_blank"><i class="icon facebook"></i> Like us on Facebook</a></li>
+								<li><a href="https://twitter.com/ActiveCareSF" target="_blank"><i class="icon twitter"></i> Follow us on Twitter</a></li>
+								<li><a href="https://instagram.com/ActiveCareSF" target="_blank"><i class="icon instagram"></i> Follow us on Instagram</a></li>
 							</ul>
 						</div>
 					</div>

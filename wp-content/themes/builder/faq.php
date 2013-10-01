@@ -31,14 +31,14 @@
                   <div class="accordion" id="faq">
                      <?php
                        global $post;
-                       $args = array( 'numberposts' => 20, 'category' => 136 );
+                       $args = array( 'numberposts' => 20, 'category' => 'faq' );
                        $myposts = get_posts( $args );
                        foreach( $myposts as $post ) :  setup_postdata($post); 
                      ?>
                      <div class="accordion-group">
                         <div class="accordion-heading">
-                           <a class="accordion-toggle" data-toggle="collapse" data-parent="" href="#collapse<?php the_ID(); ?>">
-                              <h3><?php the_title(); ?></h3>
+                           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="" href="#collapse<?php the_ID(); ?>">
+                              <h3><i></i><?php the_title(); ?></h3>
                            </a>
                         </div>
                         <div id="collapse<?php the_ID(); ?>" class="accordion-body collapse">

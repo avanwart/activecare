@@ -11,14 +11,22 @@
 }
 @red: 	#c74545;
 @blue:  red;
-
-body {
-	background: red;
-}
+@black: #0c0c0c;
+@grey:  #666666;
+@darkGrey: #333;
 
 h1, h2, h3, h4 {
 	font-family: 'bebas_neueregular';
 	-webkit-font-smoothing: antialiased;
+}
+blockquote {
+	font-family: 'Patrick Hand SC';
+	font-size: 2em;
+	text-align: center;
+	small {
+		display: inline-block;
+		margin-left: 20px;
+	}
 }
 .btn {
 	padding: 12px 24px;
@@ -36,29 +44,37 @@ h1, h2, h3, h4 {
 		float: none!important;
 		width: 100%;
 		text-align: center;
-		.navbar-brand {
-			float: none;
-			display: inline-block;
-			color: #666;
-			font-family: 'bebas_neueregular';
-			font-size: 77px;
-			line-height: 1;
-			margin: 20px 0 -25px 0;
-			padding: 0;
-			span {
-				color: #333;
+		.logo {
+			.navbar-brand {
+				float: none;
+				display: inline-block;
+				color: #666;
+				font-family: 'bebas_neueregular';
+				font-size: 77px;
+				line-height: 1;
+				margin: 20px 0 -25px 0;
+				padding: 0;
+				span {
+					color: #333;
+				}
 			}
-		}
-		.tagline {
-			margin-top: -20px;
-			h1 {
-				font-size: 18px;
+			.tagline {
+				margin: -20px 0 20px;
+				h1 {
+					margin: 0;
+					font-size: 18px;
+				}
 			}
-		}
-		.navbar-brand:hover {
-			color: @red;
-			span {
-				color: darken(@red, 10%);
+			.navbar-brand {
+				color: darken(@grey, 20%);
+				span {
+					color: darken(@darkGrey, 10%);
+				}
+			}
+			&:hover {
+				a {
+					color: darken(@grey, 20%);
+				}
 			}
 		}
 		.navbar-toggle {
@@ -90,7 +106,7 @@ h1, h2, h3, h4 {
 					font-size: 20px;
 					padding: 10px 25px;
 					&:hover {
-						color: @red;
+						color: darken(@grey, 10%);
 						background: transparent;
 					}
 				}
@@ -103,6 +119,9 @@ h1, h2, h3, h4 {
 }
 
 /*  HOME PAGE  */
+#banner.home-page {
+	margin-bottom: 0;
+}
 .carousel {
 	.carousel-control {
 		line-height: 350px;
@@ -179,6 +198,24 @@ h1, h2, h3, h4 {
 	}
 }
 
+/*  TESTIMONIALS  */
+#social-proof {
+	margin-bottom: 40px;
+	background: #efefef;
+	h3 {
+		text-align: center;
+		font-size: 2.5em;
+		color: #666;
+		margin-bottom: 0;
+	}
+	blockquote {
+		max-width: 75%;
+		margin: 0 auto 15px;
+		border-left: 0;
+		text-shadow: 0px 1px 0px white;
+	}
+}
+
 //  CONTENT
 #content {
 	margin-top: 1em;
@@ -201,20 +238,37 @@ h1, h2, h3, h4 {
 	.accordion-heading {
 		border-top: 1px solid #dadada;
 		.accordion-toggle {
-			text-align: center;
+			text-align: left;
 			h3 {
-				font-size: 32px;
+				margin-left: 20px;
+				i {
+					display: inline-block;
+					width: 12px;
+					height: 12px;
+					background-image: url('../img/expand-icon.png');
+					background-position: 0 -12px;
+					vertical-align: middle;
+					margin: 0 10px;
+				}
+				font-size: 24px;
 				margin: 0;
 				padding: 10px 0;
 				&:hover {
-					background: #f3f3f3;
+
+				}
+			}
+		}
+		.collapsed {
+			h3 {
+				i {
+					background-position: 0 0;
 				}
 			}
 		}
 	}
 	
 	.accordion-inner {
-		padding: 20px 10px;
+		padding: 0 10px 20px 10px;
 		p {
 			font-size: 16px;
 			line-height: 24px;
@@ -288,30 +342,41 @@ h1, h2, h3, h4 {
 		text-align: center;
 		-webkit-font-smoothing: antialiased;
 	}
-	ul.social-media {
-		margin: 20px 0;
-		padding: 0;
-		list-style-type: none;
-		li {
-			margin-bottom: 15px;
-			a {
-				font-size: 20px;
-				font-family: 'Roboto Slab';
-				color: white;
-				-webkit-font-smoothing: antialiased;
-			}
+}
+ul.social-media {
+	margin: 20px 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		margin-bottom: 15px;
+		a {
+			font-size: 20px;
+			font-family: 'Roboto Slab';
+			color: white;
+			-webkit-font-smoothing: antialiased;
 		}
+		&:hover {
+			i {
+				text-decoration: none;
+				background-position: 0 -24px;
+			}
+		}	
 	}
-	i.twitter {
-		width: 24px;
-		height: 24px;
-		background-image: url('../img/twitter-icon.png');
-	}
-	i.facebook {
-		width: 24px;
-		height: 24px;
-		background-image: url('../img/facebook-icon.png');
-	}
+}
+i.twitter {
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/twitter-icon.png');
+}
+i.facebook {
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/facebook-icon.png');
+}
+i.instagram {
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/instagram-icon.png');
 }
 
 i.icon {

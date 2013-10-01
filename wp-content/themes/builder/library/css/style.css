@@ -6602,15 +6602,21 @@ and more scalable.
   font-weight: normal;
   font-style: normal;
 }
-body {
-  background: red;
-}
 h1,
 h2,
 h3,
 h4 {
   font-family: 'bebas_neueregular';
   -webkit-font-smoothing: antialiased;
+}
+blockquote {
+  font-family: 'Patrick Hand SC';
+  font-size: 2em;
+  text-align: center;
+}
+blockquote small {
+  display: inline-block;
+  margin-left: 20px;
 }
 .btn {
   padding: 12px 24px;
@@ -6630,7 +6636,7 @@ h4 {
   width: 100%;
   text-align: center;
 }
-.navbar .navbar-header .navbar-brand {
+.navbar .navbar-header .logo .navbar-brand {
   float: none;
   display: inline-block;
   color: #666;
@@ -6640,20 +6646,24 @@ h4 {
   margin: 20px 0 -25px 0;
   padding: 0;
 }
-.navbar .navbar-header .navbar-brand span {
+.navbar .navbar-header .logo .navbar-brand span {
   color: #333;
 }
-.navbar .navbar-header .tagline {
-  margin-top: -20px;
+.navbar .navbar-header .logo .tagline {
+  margin: -20px 0 20px;
 }
-.navbar .navbar-header .tagline h1 {
+.navbar .navbar-header .logo .tagline h1 {
+  margin: 0;
   font-size: 18px;
 }
-.navbar .navbar-header .navbar-brand:hover {
-  color: #c74545;
+.navbar .navbar-header .logo .navbar-brand {
+  color: #333333;
 }
-.navbar .navbar-header .navbar-brand:hover span {
-  color: #a73232;
+.navbar .navbar-header .logo .navbar-brand span {
+  color: #1a1a1a;
+}
+.navbar .navbar-header .logo:hover a {
+  color: #333333;
 }
 .navbar .navbar-header .navbar-toggle {
   margin-top: 20px;
@@ -6685,13 +6695,16 @@ h4 {
   padding: 10px 25px;
 }
 .navbar .navbar-collapse .nav li a:hover {
-  color: #c74545;
+  color: #4d4d4d;
   background: transparent;
 }
 .navbar .navbar-collapse .nav li ul li {
   text-align: left;
 }
 /*  HOME PAGE  */
+#banner.home-page {
+  margin-bottom: 0;
+}
 .carousel .carousel-control {
   line-height: 350px;
   font-size: 10em;
@@ -6757,6 +6770,23 @@ h4 {
 .home-three p {
   margin-bottom: 24px;
 }
+/*  TESTIMONIALS  */
+#social-proof {
+  margin-bottom: 40px;
+  background: #efefef;
+}
+#social-proof h3 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #666;
+  margin-bottom: 0;
+}
+#social-proof blockquote {
+  max-width: 75%;
+  margin: 0 auto 15px;
+  border-left: 0;
+  text-shadow: 0px 1px 0px white;
+}
 #content {
   margin-top: 1em;
 }
@@ -6776,18 +6806,28 @@ h4 {
   border-top: 1px solid #dadada;
 }
 .accordion .accordion-heading .accordion-toggle {
-  text-align: center;
+  text-align: left;
 }
 .accordion .accordion-heading .accordion-toggle h3 {
-  font-size: 32px;
+  margin-left: 20px;
+  font-size: 24px;
   margin: 0;
   padding: 10px 0;
 }
-.accordion .accordion-heading .accordion-toggle h3:hover {
-  background: #f3f3f3;
+.accordion .accordion-heading .accordion-toggle h3 i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/expand-icon.png');
+  background-position: 0 -12px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.accordion .accordion-heading .collapsed h3 i {
+  background-position: 0 0;
 }
 .accordion .accordion-inner {
-  padding: 20px 10px;
+  padding: 0 10px 20px 10px;
 }
 .accordion .accordion-inner p {
   font-size: 16px;
@@ -6855,29 +6895,38 @@ h4 {
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
-.footer ul.social-media {
+ul.social-media {
   margin: 20px 0;
   padding: 0;
   list-style-type: none;
 }
-.footer ul.social-media li {
+ul.social-media li {
   margin-bottom: 15px;
 }
-.footer ul.social-media li a {
+ul.social-media li a {
   font-size: 20px;
   font-family: 'Roboto Slab';
   color: white;
   -webkit-font-smoothing: antialiased;
 }
-.footer i.twitter {
+ul.social-media li:hover i {
+  text-decoration: none;
+  background-position: 0 -24px;
+}
+i.twitter {
   width: 24px;
   height: 24px;
   background-image: url('../img/twitter-icon.png');
 }
-.footer i.facebook {
+i.facebook {
   width: 24px;
   height: 24px;
   background-image: url('../img/facebook-icon.png');
+}
+i.instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/instagram-icon.png');
 }
 i.icon {
   display: inline-block;
