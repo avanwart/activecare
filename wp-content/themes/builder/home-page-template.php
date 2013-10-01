@@ -77,6 +77,7 @@
 					</li>
 				<?php endforeach; ?>
 				</ul>
+				<p class="right"><a href="/testimonials">View more testimonials &raquo;</a></p>
 			</div>
 		</div>
 	</div>

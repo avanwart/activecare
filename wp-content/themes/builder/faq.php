@@ -31,7 +31,7 @@
                   <div class="accordion" id="faq">
                      <?php
                        global $post;
-                       $args = array( 'numberposts' => 20, 'category' => 'faq' );
+                       $args = array( 'numberposts' => 20, 'category' => '3' );
                        $myposts = get_posts( $args );
                        foreach( $myposts as $post ) :  setup_postdata($post); 
                      ?>

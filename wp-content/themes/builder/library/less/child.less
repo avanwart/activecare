@@ -28,6 +28,12 @@ blockquote {
 		margin-left: 20px;
 	}
 }
+p.right {
+	text-align: right;
+}
+p.center {
+	text-align: center;
+}
 .btn {
 	padding: 12px 24px;
 	border-radius: 0;
@@ -202,6 +208,10 @@ blockquote {
 #social-proof {
 	margin-bottom: 40px;
 	background: #efefef;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 	h3 {
 		text-align: center;
 		font-size: 2.5em;
@@ -210,9 +220,13 @@ blockquote {
 	}
 	blockquote {
 		max-width: 75%;
-		margin: 0 auto 15px;
+		margin: 0 auto;
 		border-left: 0;
 		text-shadow: 0px 1px 0px white;
+	}
+	p {
+		margin-top: -20px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -268,11 +282,36 @@ blockquote {
 	}
 	
 	.accordion-inner {
-		padding: 0 10px 20px 10px;
+		padding: 0 10px;
 		p {
 			font-size: 16px;
 			line-height: 24px;
 			margin-bottom: 24px;
+		}
+	}
+}
+
+// BLOG
+
+article.post {
+	border: 1px solid #dadada;
+	background: #f9f9f9;
+	border-left: 4px solid @darkGrey;
+	margin: 30px 0;
+	padding: 15px 20px;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	img {
+		border: 1px solid #ccc;
+		padding: 6px;
+		background: white;
+	}
+	h2 {
+		margin: 0;
+		a {
+			font-family: 'bebas_neueregular';
 		}
 	}
 }

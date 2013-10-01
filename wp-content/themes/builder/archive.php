@@ -12,11 +12,13 @@
 							<?php builder_breadcrumb_lists(); ?>
 							<?php } ?>
 
-							<?php if (is_category()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
+							<?php if (is_category('Testimonials')) { ?>
+								<h1 class="h2">
+									<?php single_cat_title(); ?>
 								</h1>
 
+							<?php } elseif (is_category('Blog')) { ?>
+								<h1 class="h2"><?php single_cat_title(); ?></h1>
 							<?php } elseif (is_tag()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
@@ -50,21 +52,27 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+								<div class="row">
+									<div class="col-lg-3">
+										<?php the_post_thumbnail('thumbnail'); ?>
+									</div>
+									<div class="col-lg-9">
+										<header class="article-header">
 
-								<header class="article-header">
+											<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+											<p class="byline vcard"><?php
+												printf(__( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(__( 'F jS, Y', 'bonestheme' )), bones_get_the_author_posts_link(), get_the_category_list(', '));
+											?></p>
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf(__( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(__( 'F jS, Y', 'bonestheme' )), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
+										</header> <!-- end article header -->
 
-								</header> <!-- end article header -->
+										<section class="entry-content clearfix">
 
-								<section class="entry-content clearfix">
+											<?php the_excerpt(); ?>
 
-									<?php the_excerpt(); ?>
-
-								</section> <!-- end article section -->
+										</section> <!-- end article section -->
+									</div>
+								</div>
 
 								<footer class="article-footer">
 
