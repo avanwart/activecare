@@ -16,7 +16,9 @@
    		<div id="inner-content" class="wrap clearfix">
 
    			<div id="main" class="content-main clearfix" role="main">
-
+               <?php if (function_exists("builder_breadcrumb_lists")) { ?>
+                  <?php builder_breadcrumb_lists(); ?>
+               <?php } ?>
    				
 
    				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

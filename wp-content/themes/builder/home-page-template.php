@@ -8,7 +8,7 @@
 ?>
 
 <?php get_header(); ?>
-
+	
 <div id="banner" class="home-page">
 	<div id="myCarousel" class="carousel slide">
 		<div class="carousel-inner">
@@ -76,8 +76,9 @@
 						<blockquote><?php the_field('quote'); ?> <small><?php the_field('name'); ?></small></blockquote>
 					</li>
 				<?php endforeach; ?>
+				<?php wp_reset_postdata(); ?>
 				</ul>
-				<p class="right"><a href="/testimonials">View more testimonials &raquo;</a></p>
+				<p class="right"><a href="/member-testimonials">View more testimonials &raquo;</a></p>
 			</div>
 		</div>
 	</div>
@@ -87,7 +88,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<h2><?php the_field('headline_1'); ?></h2>
-			<img class="thumbnail" src="<?php the_field('founder'); ?>">
+			<img class="thumbnail" src="http://activecare/wp-content/uploads/2013/09/lisa1-233x300.jpg">
 			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->

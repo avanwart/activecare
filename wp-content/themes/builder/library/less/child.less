@@ -232,6 +232,16 @@ p.center {
 
 //  CONTENT
 #content {
+	h1 {
+		margin-bottom: 30px;
+	}
+	.breadcrumb {
+		padding: 8px 0;
+		margin-bottom: 20px;
+		list-style: none;
+		background-color: transparent;
+		border-radius: 0;
+	}
 	margin-top: 1em;
 	.article-header h1 {
 		font-family: 'bebas_neueregular';
@@ -291,13 +301,23 @@ p.center {
 	}
 }
 
+// TESTIMONIALS
+
+.testimonial {
+	blockquote {
+		text-align: left;
+		border: none;
+		padding: 0;
+	}
+}
+
 // BLOG
 
 article.post {
 	border: 1px solid #dadada;
 	background: #f9f9f9;
 	border-left: 4px solid @darkGrey;
-	margin: 30px 0;
+	margin: 0 0 30px 0;
 	padding: 15px 20px;
 	border-radius: 0;
 	-webkit-box-sizing: border-box;
@@ -318,6 +338,7 @@ article.post {
 
 // SIDEBAR
 .sidebar {
+	margin-top: 30px;
 	position: relative;
 	min-height: 1px;
 	padding: 20px 30px;
@@ -380,6 +401,13 @@ article.post {
 	.copyright {
 		text-align: center;
 		-webkit-font-smoothing: antialiased;
+	}
+}
+footer.lean {
+	background: transparent;
+	border: none;
+	.copyright {
+		color: @grey;
 	}
 }
 ul.social-media {
