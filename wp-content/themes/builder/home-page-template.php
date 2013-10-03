@@ -8,16 +8,17 @@
 ?>
 
 <?php get_header(); ?>
-	
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <div id="banner" class="home-page">
 	<div id="myCarousel" class="carousel slide">
 		<div class="carousel-inner">
-			<div class="item active sports">
+			<div class="item active sports" style="background: url('<?php the_field('photo_1');?>') 50% 50% no-repeat; background-size: cover;">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 stage light">
-								<h1>Sports</h1>
+								<h1><?php the_field('text_1'); ?></h1>
 							</div>
 							<div class="col-lg-5">
 								
@@ -26,12 +27,12 @@
 					</div> <!-- end .container-->
 				</div> <!-- end .jumbotron-->
 			</div>
-			<div class="item life">
+			<div class="item life" style="background: url('<?php the_field('photo_2');?>') 50% 50% no-repeat; background-size: cover;">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 stage light">
-								<h1>Life</h1>
+								<h1><?php the_field('text_2'); ?></h1>
 							</div>
 							<div class="col-lg-5">
 								
@@ -40,12 +41,12 @@
 					</div> <!-- end .container-->
 				</div> <!-- end .jumbotron-->
 			</div>
-			<div class="item dance">
+			<div class="item dance" style="background: url('<?php the_field('photo_3');?>') 10% 50% no-repeat; background-size: cover;">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 stage light">
-								<h1>Dance</h1>
+								<h1><?php the_field('text_3'); ?></h1>
 							</div>
 							<div class="col-lg-5">
 								
@@ -64,21 +65,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>Hear what our clients have to say</h3>
+				<h3><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">Hear what our clients have to say</a></h3>
 				<ul class="testimonials unstyled">
 				<?php
                    global $post;
-                   $args = array( 'posts_per_page' => 2, 'category' => 'Testimonials' );
+                   $args = array( 'posts_per_page' => 2, 'category' => '136' );
                    $myposts = get_posts( $args );
                    foreach( $myposts as $post ) :  setup_postdata($post); 
                  ?>
 					<li style="display: none;">
-						<blockquote><?php the_field('quote'); ?> <small><?php the_field('name'); ?></small></blockquote>
+						<blockquote>&ldquo;<a href="<?php bloginfo('wpurl'); ?>/member-testimonials"><?php the_field('quote'); ?></a>&rdquo; <small><?php the_field('name'); ?></small></blockquote>
 					</li>
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
 				</ul>
-				<p class="right"><a href="/member-testimonials">View more testimonials &raquo;</a></p>
 			</div>
 		</div>
 	</div>
@@ -88,25 +88,25 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<h2><?php the_field('headline_1'); ?></h2>
-			<img class="thumbnail" src="http://activecare/wp-content/uploads/2013/09/lisa1-233x300.jpg">
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+			<img class="thumbnail" src="<?php the_field('founder'); ?>">
+			<p><?php the_field('supporting_text_1'); ?></p>
+			<p><a class="btn btn-success" href="<?php bloginfo('wpurl'); ?>/founder">Learn more <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<h2><?php the_field('headline_2'); ?></h2>
 			<img class="thumbnail" src="<?php the_field('philosophy'); ?>">
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+			<p><?php the_field('supporting_text_2'); ?></p>
+			<p><a class="btn btn-success" href="<?php bloginfo('wpurl'); ?>/philosophy">Learn more <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<h2><?php the_field('headline_3'); ?></h2>
 			<img class="thumbnail" src="<?php the_field('annexe'); ?>">
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-success" href="#">View details <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+			<p><?php the_field('supporting_text_3'); ?></p>
+			<p><a class="btn btn-success" href="<?php bloginfo('wpurl'); ?>/performance-center">Learn more <span class="glyphicon glyphicon-chevron-right"></span></a></p>
 		</div><!-- /.col-lg-4 -->
 	</div> <!-- end .row-->
 </div> <!-- end .container-->
-
+<?php endwhile; endif; ?>
 <script>
 	jQuery(document).ready(function($){
 		$(function(){

@@ -16,11 +16,12 @@
    		<div id="inner-content" class="wrap clearfix">
 
    			<div id="main" class="content-main clearfix" role="main">
-               <?php if (function_exists("builder_breadcrumb_lists")) { ?>
+               <?php /*if (function_exists("builder_breadcrumb_lists")) { ?>
                   <?php builder_breadcrumb_lists(); ?>
-               <?php } ?>
-
-               <h1>Hear what our members have to say about Active Care</h1>
+               <?php } */?>
+               <header class="article-header">
+                  <h1 class="page-title"><?php the_title(); ?></h1>
+               </header>
 
                <?php
                    global $post;
@@ -31,19 +32,18 @@
 
    				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
                   <div class="row">
-                     <div class="col-lg-3">
+                     <!-- <div class="col-lg-3">
                         <?php the_post_thumbnail('thumbnail'); ?>
-                     </div>
-                     <div class="col-lg-9">
+                     </div> -->
+                     <div class="col-lg-12 quote">
+                        <div class="quotations">&rdquo;</div>
                         <header class="article-header">
-
-                           <h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
                         </header> <!-- end article header -->
 
                         <section class="entry-content clearfix testimonial">
 
-                           <blockquote><?php the_field('quote'); ?></blockquote>
+                           <blockquote>&ldquo;<?php the_field('quote'); ?>&rdquo;<small><?php the_field('name'); ?></small></blockquote>
 
                         </section> <!-- end article section -->
                      </div>

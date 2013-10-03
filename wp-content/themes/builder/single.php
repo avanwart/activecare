@@ -14,19 +14,33 @@
 							<?php builder_breadcrumb_lists(); ?>
 							<?php } ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
-
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-									?></p>
-
 								</header> <!-- end article header -->
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
+								<section class="entry-content" itemprop="articleBody">
+									<div class="team-member">
+										<?php 
+										if ( in_category( array( 'Physical Therapists', 'Trainers' ) )) {  ?>
+											<?php the_post_thumbnail('large'); ?>
+											<h3>Education</h3>
+											<?php the_field('education'); ?>
+											<h3>Credentials</h3>
+											<?php the_field('credentials'); ?>
+											<h3>Activities</h3>
+											<?php the_field('activities'); ?>
+											<h3>Favorite Quote</h3>
+											<?php the_field('quote'); ?>
+											<div class="clearfix"></div>
+											<h3>Bio</h3>
+											<?php the_field('bio'); ?>
+										<?php } else {
+											the_content();
+										}
+										?>
+									</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
@@ -34,7 +48,7 @@
 
 								</footer> <!-- end article footer -->
 
-								<?php comments_template(); ?>
+								
 
 							</article> <!-- end article -->
 

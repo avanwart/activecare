@@ -8,9 +8,9 @@
 
 						<div id="main" class="clearfix" role="main">
 
-							<?php if (function_exists("builder_breadcrumb_lists")) { ?>
+							<?php /*if (function_exists("builder_breadcrumb_lists")) { ?>
 							<?php builder_breadcrumb_lists(); ?>
-							<?php } ?>
+							<?php } */?>
 
 							<?php if (is_category('Testimonials')) { ?>
 								<h1 class="h2">
@@ -18,7 +18,9 @@
 								</h1>
 
 							<?php } elseif (is_category('Blog')) { ?>
-								<h1 class="h2"><?php single_cat_title(); ?></h1>
+								<header class="article-header">
+				                    <h1 class="page-title"><?php single_cat_title(); ?></h1>
+				                </header>
 							<?php } elseif (is_tag()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
@@ -73,10 +75,6 @@
 										</section> <!-- end article section -->
 									</div>
 								</div>
-
-								<footer class="article-footer">
-
-								</footer> <!-- end article footer -->
 
 							</article> <!-- end article -->
 
