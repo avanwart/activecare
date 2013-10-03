@@ -280,7 +280,7 @@ p.center {
 		text-align: center;
 		margin-bottom: 0;
 		a {
-			font-size: 2.5em;
+			font-size: 1.5em;
 			color: #666;
 		}
 	}
@@ -570,6 +570,25 @@ article.post:before {
 		}
 	}
 }
+
+// BLOG SINGLE POSTS
+
+.article-footer {
+	.btn {
+		padding: 4px 14px;
+		background: #f6f6f6;
+		border: 1px solid #dadada;
+		font-size: 14px;
+		margin: 0 5px 10px;
+		color: @grey;
+		&:hover {
+			color: white;
+			background: @darkGrey;
+			border-color: darken(@darkGrey, 10%);
+		}
+	}
+}
+
 /*  FOOTER  */
 .footer {
 	border-top: 1px solid rgba(0, 0, 0, .5);

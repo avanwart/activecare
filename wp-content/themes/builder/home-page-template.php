@@ -65,7 +65,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">Hear what our clients have to say</a></h3>
+				<h3><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">What people are saying about us</a></h3>
 				<ul class="testimonials unstyled">
 				<?php
                    global $post;

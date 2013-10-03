@@ -6883,7 +6883,7 @@ p.center {
   margin-bottom: 0;
 }
 #social-proof h3 a {
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #666;
 }
 #social-proof blockquote {
@@ -7144,6 +7144,19 @@ article.post:before {
 }
 .sidebar .footer-nav li a {
   color: white;
+}
+.article-footer .btn {
+  padding: 4px 14px;
+  background: #f6f6f6;
+  border: 1px solid #dadada;
+  font-size: 14px;
+  margin: 0 5px 10px;
+  color: #666666;
+}
+.article-footer .btn:hover {
+  color: white;
+  background: #333333;
+  border-color: #1a1a1a;
 }
 /*  FOOTER  */
 .footer {
