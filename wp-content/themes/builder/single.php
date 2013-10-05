@@ -14,7 +14,7 @@
 							<?php builder_breadcrumb_lists(); ?>
 							<?php } */?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('meet-the-team'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
@@ -27,14 +27,12 @@
 											<?php the_post_thumbnail('large'); ?>
 											<h3>Education</h3>
 											<?php the_field('education'); ?>
-											<h3>Credentials</h3>
 											<?php the_field('credentials'); ?>
 											<h3>Activities</h3>
 											<?php the_field('activities'); ?>
 											<h3>Favorite Quote</h3>
-											<?php the_field('quote'); ?>
+											<p><?php the_field('quote'); ?></p>
 											<div class="clearfix"></div>
-											<h3>Bio</h3>
 											<?php the_field('bio'); ?>
 										<?php } else {
 											the_content();
