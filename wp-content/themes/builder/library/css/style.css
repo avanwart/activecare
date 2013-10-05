@@ -6685,8 +6685,8 @@ p.center {
   border-bottom-color: #555;
 }
 .navbar .navbar-collapse .nav a:hover .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
+  border-top-color: #252525;
+  border-bottom-color: #252525;
 }
 .navbar .navbar-collapse .nav li a {
   color: #555;
@@ -6892,7 +6892,7 @@ p.center {
   border-left: 0;
 }
 #social-proof blockquote a {
-  color: #333333;
+  color: #252525;
   text-shadow: 0px 1px 0px white;
 }
 .quote {
@@ -7007,7 +7007,7 @@ article.post h2 a {
 }
 article.post:before {
   content: "";
-  border-left: 4px solid #333333;
+  border-left: 4px solid #252525;
   position: absolute;
   display: block;
   top: -1px;
@@ -7059,18 +7059,18 @@ article.post:before {
   padding: 6px;
 }
 #team .flip .card .front:hover {
-  border-color: #333333;
+  border-color: #252525;
 }
 #team .flip .card .front h2 {
   font-family: 'bebas_neueregular';
   text-align: center;
   margin: 10px 0;
   font-size: 24px;
-  color: #333333;
+  color: #252525;
 }
 #team .flip .card .back {
   -webkit-transform: rotatey(-180deg);
-  background: #333333;
+  background: #252525;
   color: white;
   cursor: pointer;
   padding: 20px;
@@ -7088,7 +7088,7 @@ article.post:before {
   color: white;
 }
 #team .flip .card .back p a {
-  color: #333333;
+  color: #252525;
   background: #f6f6f6;
   padding: 8px 24px;
 }
@@ -7166,8 +7166,8 @@ article.post.meet-the-team {
 }
 .article-footer .btn:hover {
   color: white;
-  background: #333333;
-  border-color: #1a1a1a;
+  background: #252525;
+  border-color: #0c0c0c;
 }
 /*  FOOTER  */
 .footer {
