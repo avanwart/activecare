@@ -44,7 +44,7 @@
                               <h2><?php the_title(); ?></h2>
                            </div> 
                            <div class="face back"> 
-                              <h3>Education</h3>
+                              <h3>Background</h3>
                               <?php the_field('education'); ?>
                               <div class="exit">
                                  <hr/>

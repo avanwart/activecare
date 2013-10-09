@@ -6947,6 +6947,21 @@ p.center {
   color: white;
   font-size: 38px;
 }
+#content h2.bar,
+#content h3.bar {
+  font-family: 'bebas_neueregular';
+  background: #222;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
 .accordion .accordion-heading {
   border-top: 1px solid #dadada;
 }
@@ -7149,6 +7164,7 @@ article.post.meet-the-team {
   display: block;
   margin-bottom: 10px;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto Slab';
 }
 .sidebar .footer-nav li span {
   display: none;
@@ -7222,29 +7238,33 @@ ul.social-media li {
   margin-bottom: 15px;
 }
 ul.social-media li a {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Roboto Slab';
   color: white;
   -webkit-font-smoothing: antialiased;
 }
-ul.social-media li:hover i {
+ul.social-media li i.icon {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+ul.social-media li:hover i.icon {
   text-decoration: none;
-  background-position: 0 -24px;
+  background-position: 0 -18px;
 }
 i.twitter {
-  width: 24px;
-  height: 24px;
-  background-image: url('../img/twitter-icon.png');
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/twitter-icon-sm.png');
 }
 i.facebook {
-  width: 24px;
-  height: 24px;
-  background-image: url('../img/facebook-icon.png');
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/facebook-icon-sm.png');
 }
 i.instagram {
-  width: 24px;
-  height: 24px;
-  background-image: url('../img/instagram-icon.png');
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/instagram-icon-sm.png');
 }
 i.icon {
   display: inline-block;
