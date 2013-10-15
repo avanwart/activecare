@@ -96,6 +96,16 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'banner',
+		'name' => __( 'Banner', 'bonestheme' ),
+		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
@@ -175,4 +185,23 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 */
+function custom_excerpt_length( $length ) {
+	return 44;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function custom_field_excerpt() {
+	global $post;
+	$text = get_field('quote');
+	if ( '' != $text ) {
+		$text = strip_shortcodes( $text );
+		$text = apply_filters('the_content', $text);
+		$text = str_replace(']]>', ']]>', $text);
+		$excerpt_length = 40; // 20 words
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '[... Read more]');
+		$text = wp_trim_words( $text, $excerpt_length );
+	}
+	return apply_filters('the_excerpt', $text);
+}
+
 ?>

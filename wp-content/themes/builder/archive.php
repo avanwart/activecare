@@ -68,7 +68,7 @@
 
 										</header> <!-- end article header -->
 
-										<section class="entry-content clearfix">
+										<section class="entry-content blog-content clearfix">
 
 											<?php the_excerpt(); ?>
 

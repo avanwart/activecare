@@ -27,18 +27,24 @@
 											<?php the_post_thumbnail('large'); ?>
 											<h3>Education</h3>
 											<?php the_field('education'); ?>
-											<?php the_field('credentials'); ?>
+											<?php the_field('background_credentials'); ?>
 											<h3>Activities</h3>
 											<?php the_field('activities'); ?>
 											<h3>Favorite Quote</h3>
-											<p><?php the_field('quote'); ?></p>
+											<p><strong><?php the_field('quote'); ?></strong></p>
 											<div class="clearfix"></div>
+											<h3>More about <?php the_title(); ?></h3>
 											<?php the_field('bio'); ?>
 										<?php } else {
 											the_content();
 										}
 										?>
+										<p class="right">
+											<a href="<?php bloginfo('wpurl'); ?>/personal-trainers">Back to Trainers &rarr;</a><br/>
+											<a href="<?php bloginfo('wpurl'); ?>/physical-therapists">Back to Physical Therapists &rarr;</a>
+										</p>
 									</div>
+			
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">

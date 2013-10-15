@@ -13,7 +13,7 @@
 <div id="banner" class="home-page">
 	<div id="myCarousel" class="carousel slide">
 		<div class="carousel-inner">
-			<div class="item active sports" style="background: url('<?php the_field('photo_1');?>') 50% 50% no-repeat; background-size: cover;">
+			<div class="item sports active" style="background: url('<?php the_field('photo_1');?>') 50% 50% no-repeat; background-size: cover; opacity: 0;">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
@@ -56,25 +56,26 @@
 				</div> <!-- end .jumbotron-->
 			</div>
 		</div>
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+		<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> -->
 	</div><!-- end of carousel -->
 </div> <!-- end #banner-->
 
 <section id="social-proof">
+	<a class="triangle" href="<?php bloginfo('wpurl'); ?>/member-testimonials"><img src="<?php bloginfo('template_directory'); ?>/library/img/triangle.gif" alt="" class="triangle"></a>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">What people are saying about us</a></h3>
+				<h3><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">What our clients are saying about us</a></h3>
 				<ul class="testimonials unstyled">
 				<?php
                    global $post;
-                   $args = array( 'posts_per_page' => 2, 'category' => '136' );
+                   $args = array( 'posts_per_page' => 30, 'category' => '136' );
                    $myposts = get_posts( $args );
                    foreach( $myposts as $post ) :  setup_postdata($post); 
                  ?>
 					<li style="display: none;">
-						<blockquote>&ldquo;<a href="<?php bloginfo('wpurl'); ?>/member-testimonials"><?php the_field('quote'); ?></a>&rdquo; <small><?php the_field('name'); ?></small></blockquote>
+						<blockquote><a href="<?php bloginfo('wpurl'); ?>/member-testimonials">&ldquo;<?php echo custom_field_excerpt(); ?>&rdquo;</a> <small><?php the_field('name'); ?></small> </blockquote>
 					</li>
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
@@ -109,6 +110,16 @@
 <?php endwhile; endif; ?>
 <script>
 	jQuery(document).ready(function($){
+
+		// CAROUSEL
+		$('#myCarousel').carousel({
+			interval: 5000,
+			pause: "hover"
+		});
+		$('#myCarousel .item.sports').css('opacity', '1');
+		$('#myCarousel .item.sports').delay(7000).css('opacity', '');
+
+		// TESTIMONIALS
 		$(function(){
 			var list = $("ul.testimonials li").toArray();
 			var elemlength = list.length;

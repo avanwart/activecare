@@ -37,9 +37,6 @@
                      </div> -->
                      <div class="col-lg-12 quote">
                         <div class="quotations">&rdquo;</div>
-                        <header class="article-header">
-
-                        </header> <!-- end article header -->
 
                         <section class="entry-content clearfix testimonial">
 

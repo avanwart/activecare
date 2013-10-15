@@ -21,12 +21,12 @@ h1, h2, h3, h4 {
 	-webkit-font-smoothing: antialiased;
 }
 blockquote {
-	font-family: 'Roboto Slab';
+	font-family: 'Arvo';
 	font-size: 20px;
 	text-align: center;
 	small {
 		display: inline-block;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 }
 p.right {
@@ -35,6 +35,7 @@ p.right {
 p.center {
 	text-align: center;
 }
+small { font-size: 100%; }
 .btn {
 	padding: 12px 24px;
 	border-radius: 0;
@@ -133,7 +134,7 @@ p.center {
 }
 .carousel {
 	.carousel-control {
-		line-height: 350px;
+		line-height: 420px;
 		font-size: 10em;
 		font-family: 'bebas_neueregular';
 		opacity: .12;
@@ -141,9 +142,17 @@ p.center {
 			opacity: 1;
 		}
 	}
+	.carousel-inner {
+		background: #111;
+	}
 	.item {
-		height: 350px;
-		background-color: #111;
+		opacity: 0;
+		height: 420px;
+		-webkit-transition: opacity 2s ease-in-out .2s;
+		-moz-transition: opacity 2s ease-in-out .2s;
+		-ms-transition: opacity 2s ease-in-out .2s;
+		-o-transition: opacity 2s ease-in-out .2s;
+		transition: opacity 2s ease-in-out .2s;
 		.jumbotron {
 			background: transparent;
 			margin: 0;
@@ -151,6 +160,11 @@ p.center {
 		@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:.99; } }
 		@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:.99; } }
 		@keyframes fadeIn { from { opacity:0; } to { opacity:.99; } }
+
+		@-webkit-keyframes fadeOut { from { opacity:.99; } to { opacity:0; } }
+		@-moz-keyframes fadeOut { from { opacity:.99; } to { opacity:0; } }
+		@keyframes fadeOut { from { opacity:.99; } to { opacity:0; } }
+
 		@-webkit-keyframes shift {
 		  0%   { margin-top: 0em; }
 		  100% { margin-top: 0em; }
@@ -167,24 +181,23 @@ p.center {
 		  0%   { margin-top: 0em; }
 		  100% { margin-top: 0em; }
 		}
-
 		h1 {
 			opacity:0;  /* make things invisible upon start */
-		    -webkit-animation:fadeIn ease-in-out 2s, shift ease-in-out 2s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-		    -moz-animation:fadeIn ease-in-out 2s, shift ease-in-out 2s;
-		    animation:fadeIn ease-in-out 2s, shift ease-in-out 2s;
+		    -webkit-animation:fadeIn ease-in-out 2s 1.5s, fadeOut ease-in-out .5s 5s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		    -moz-animation:fadeIn ease-in-out 2s 1.5s, fadeOut ease-in-out .5s 5s;
+		    animation:fadeIn ease-in-out 2s 1.5s, fadeOut ease-in-out .5s 5s;
 		 
 		    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 		    -moz-animation-fill-mode:forwards;
 		    animation-fill-mode:forwards;
-		 
-	
-
-		    
-
 		}
 	}
 	.item.active {
+		opacity: 1;
+
+		-webkit-animation:fadeOut ease-in-out 1s 5s;
+		    -moz-animation:fadeOut ease-in-out 1s 5s;
+		    animation:fadeOut ease-in-out 1s 5s;
 		h1 {
 			
 		}
@@ -206,6 +219,8 @@ p.center {
 		h1 {
 			font-size: 10em;
 			text-align: center;
+			line-height: 280px;
+			margin: 0;
 		}
 	}
 	.dark {
@@ -231,7 +246,6 @@ p.center {
 .carousel {
   .item {
     left: 0 !important;
-    .transition(opacity .4s); //adjust timing here
   }
   .carousel-control {
     background-image: none; // remove background gradients on controls
@@ -273,31 +287,50 @@ p.center {
 #social-proof {
 	margin-bottom: 40px;
 	background: #efefef;
+	padding: 15px 0;
+	position: relative;
+	.triangle {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 	ul {
 		margin: 0;
 		padding: 0;
 	}
 	h3 {
 		text-align: center;
-		margin-bottom: 0;
+		margin: 0;
+		font-size: 18px;
 		a {
-			font-size: 1.5em;
-			color: #666;
+			font-size: 24px;
+			color: #999;
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, .9);
 		}
 	}
 	blockquote {
 		max-width: 75%;
-		margin: 0 auto 20px;
+		margin: 0 auto;
 		border-left: 0;	
+		font-size: 18px;
+		-webkit-font-smoothing: antialiased;
+		padding: 5px 0 0 0;
+		p {
+			font-size: 16px;
+			display: inline;
+			line-height: 1.6;
+		}
+		small {
+			font-size: 16px;
+		}
 		a {
 			color: @darkGrey;
-			text-shadow: 0px 1px 0px white;
 		}
 	}
 }
 .quote {
 	position: relative;
-	padding-left: 5%;
+	padding-left: 20px;
 	.article-header {
 		margin-bottom: 10px;
 		h2 {
@@ -311,13 +344,14 @@ p.center {
 		padding: 0;
 		font-size: 18px;
 		text-shadow: 0px 1px 0px white;
+		line-height: 1.6;
 	}
 	div.quotations {
 		position: absolute;
 		line-height: 1;
 		color: rgba(0, 0, 0, 0.05);
 		font-family: Georgia, serif;
-		font-size: 200px;
+		font-size: 140px;
 		right: 1%;
 		top: -21px;
 	}
@@ -358,8 +392,6 @@ p.center {
 		margin-bottom: 20px;
 	}
 	p {
-		font-size: 16px;
-		margin-bottom: 30px;
 		line-height: 1.5;
 	}
 }
@@ -421,6 +453,20 @@ article.post {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	.byline {
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #999;
+		margin-bottom: 10px;
+	}
+	.excerpt-read-more {
+		font-family: 'bebas_neueregular';
+		color: @darkGrey;
+		font-size: 18px;
+	}
+	blockquote {
+		margin: 0;
+	}
 	img {
 		border: 1px solid #ccc;
 		padding: 6px;
@@ -433,6 +479,11 @@ article.post {
 		a {
 			font-family: 'bebas_neueregular';
 			font-size: 36px;
+		}
+	}
+	.blog-content {
+		p {
+			margin: 0;
 		}
 	}
 }
@@ -454,7 +505,8 @@ article.post:before {
 	.flip {
 		width: 216px;
 		height: 260px;
-	  -webkit-perspective: 532;
+	  	-webkit-perspective: 532;
+	  	-moz-perspective: 532;
 	    position: relative;
 	    float: left;
 	    margin: 0 15px 15px 15px;
@@ -466,19 +518,25 @@ article.post:before {
 	    }
 	}
 	.flip .card.flipped {
-	  -webkit-transform: rotatey(-180deg);
+	  -webkit-transform: rotateY(-180deg);
+	  -moz-transform: rotateY(-180deg);
 	}
 	.flip .card {
 	  width: 100%;
 	  height: 100%;
 	  -webkit-transform-style: preserve-3d;
 	  -webkit-transition: 0.5s;
+	  -moz-transform-style: preserve-3d;
+	  -moz-transition: 0.5s;
 	}
 	.flip .card .face {
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	  -webkit-backface-visibility: hidden ;
+		width: 100%;
+	  	height: 100%;
+	  	position: absolute;
+	  	-webkit-backface-visibility: hidden ;
+	  -moz-backface-visibility: hidden ;
+	}
+	.flip .card .face.front {
 	  z-index: 2;
 	}
 	.flip .card .front {
@@ -501,7 +559,8 @@ article.post:before {
 	    }
 	}
 	.flip .card .back {
-	  -webkit-transform: rotatey(-180deg);
+	  -webkit-transform: rotateY(-180deg);
+	  -moz-transform: rotateY(-180deg);
 	    background: @darkGrey;
 	    color: white;
 	    cursor: pointer;
@@ -578,7 +637,7 @@ article.post.meet-the-team {
 	}
 	.widgettitle {
 		color: white;
-		font-size: 28px;
+		font-size: 26px;
 		-webkit-font-smoothing: antialiased;
 	}
 	.footer-nav {
@@ -587,7 +646,8 @@ article.post.meet-the-team {
 			display: block;
 			margin-bottom: 10px;
 			-webkit-font-smoothing: antialiased;
-			font-family: 'Roboto Slab';
+			font-family: 'Arvo';
+			font-size: 16px;
 			span {
 				display: none;
 			}
@@ -638,8 +698,8 @@ article.post.meet-the-team {
 			display: block;
 			float: none;
 			color: white;
-			font-family: 'Roboto Slab';
-			font-size: 15px;
+			font-family: 'Arvo';
+			font-size: 16px;
 			margin-bottom: 15px;
 			-webkit-font-smoothing: antialiased;
 			a {
@@ -663,14 +723,14 @@ footer.lean {
 	}
 }
 ul.social-media {
-	margin: 20px 0;
+	margin: 10px 0 20px;
 	padding: 0;
 	list-style-type: none;
 	li {
 		margin-bottom: 15px;
 		a {
-			font-size: 16px;
-			font-family: 'Roboto Slab';
+			font-size: 19px;
+			font-family: 'Arvo';
 			color: white;
 			-webkit-font-smoothing: antialiased;
 		}
@@ -739,7 +799,58 @@ i.clock {
 	margin-bottom: 3px;
 	background-image: url('../img/clock-icon.png');
 }
-
+#contact {
+	background: url('../img/front-desk.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	min-height: 400px;
+	box-sizing: border-box;
+	padding: 20px;
+	form {
+		max-width: 60%;
+		background: rgba(0, 0, 0, .4);
+		border: 1px solid rgba(0, 0, 0, .75);
+		padding: 20px;
+		label {
+			color: white;
+			font-family: 'bebas_neueregular';
+			font-size: 18px;
+			-webkit-font-smoothing: antialiased;
+		}
+		.frm_submit {
+			text-align: center;
+		}
+		input[type="text"], input[type="email"], textarea {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-size: 15px;
+			margin-bottom: 0;
+			padding: 4px 8px;
+			border: 1px solid #222;
+		}
+		input[type="submit"] {
+			font-family: 'bebas_neueregular';
+			border-radius: 0;
+			font-size: 20px;
+			padding: 4px 22px;
+			box-shadow: none;
+			&:hover {
+				color: white;
+				background: @darkGrey;
+			}
+		}
+	}
+}
+#sidebar-banner {
+	background: transparent;
+	padding: 0;
+	border: none;
+	img {
+		width: 81%;
+		height: auto;
+		margin-left: 5%;
+	}
+}
 /*  MEDIA QUERIES  */
 @media (max-width: 1200px) {
 	.nav > li > a {
@@ -855,7 +966,6 @@ i.clock {
 			max-width: 100%;
 			margin: 0 auto;
 			border-left: 0;
-			text-shadow: 0px 1px 0px white;
 			font-size: 18px;
 			line-height: 1.4;
 			text-align: left;
